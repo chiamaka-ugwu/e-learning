@@ -24,7 +24,7 @@ section {
   border-radius: 10px;
 }
 .left a:hover,
-.active {
+ul .active {
   background-color: #fff;
   color: rgb(73, 72, 72) !important;
 }
@@ -94,11 +94,11 @@ td {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-.group p {
+.content .group p {
   width: 60%;
   font-weight: 600;
 }
-.group button {
+button {
   background-color: #9ad27d;
   color: #fff;
   border: none;

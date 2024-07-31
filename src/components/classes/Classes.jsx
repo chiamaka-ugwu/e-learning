@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./classes.css";
+import book from "../../assets/book.png";
 
 const Classes = () => {
   return (
@@ -16,7 +17,7 @@ const Classes = () => {
             <Link to="/forum">Forum</Link>
           </ul>
         </div>
-        <div className="right">
+        <div className="right classes-page">
           <div className="header">
             <div className="box">
               <p>
@@ -37,7 +38,7 @@ const Classes = () => {
           </div>
           <div className="bar">
             <p>ECE 507</p>
-            <p>ECE 508</p>
+            <p className="active">ECE 508</p>
             <p>ECE 509</p>
             <p>ECE 510</p>
             <p>ECE 517</p>
@@ -45,7 +46,7 @@ const Classes = () => {
           </div>
           <div className="group">
             <p>
-              Class is currently <span>live</span>
+              Class is currently <span className="live">live</span>
             </p>
             <button>Join</button>
           </div>
@@ -61,6 +62,24 @@ const Classes = () => {
             </div>
             <div className="two">
               <button>Submit</button>
+            </div>
+          </div>
+          <div className="materials">
+            <h4>Course Materials</h4>
+            <div className="books">
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+              <img src={book} alt="book" />
+            </div>
+            <div className="btn-container">
+              <button>Download all</button>
             </div>
           </div>
         </div>
